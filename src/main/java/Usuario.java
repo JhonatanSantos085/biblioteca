@@ -1,20 +1,21 @@
 import java.util.Scanner;
+
 public class Usuario {
     private String nome;
     private long codigo;
     private long cpf;
     private Endereco endereco;
-    Scanner scan = new Scanner(System.in);
+    Scanner scanner = ScannerUtil.getScanner();
 
     public void cadastrar(){
         System.out.print("Digite seu nome: ");
-        setNome(scan.nextLine());
+        setNome(scanner.nextLine());
         this.nome = getNome();
         System.out.print("Digite seu codigo de usuário: ");
-        setCodigo(scan.nextLong());
+        setCodigo(scanner.nextLong());
         this.codigo = getCodigo();
         System.out.print("Digite seu cpf: ");
-        setCpf(scan.nextLong());
+        setCpf(scanner.nextLong());
 
     }
 
@@ -51,5 +52,5 @@ public class Usuario {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
-    
+
 }

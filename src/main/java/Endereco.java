@@ -5,13 +5,13 @@ public class Endereco {
     private int numero;
     private String bairro;
 
-    Scanner sc = new Scanner(System.in);
+    Scanner scanner = ScannerUtil.getScanner();
 
 
     public void local(){
         System.out.println("Digite Seu endereco:");
         System.out.print("Digite o nome da rua:");
-        setRua(sc.nextLine());
+        setRua(scanner.nextLine());
 
     }
 
