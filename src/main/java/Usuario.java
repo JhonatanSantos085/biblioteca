@@ -7,19 +7,22 @@ public class Usuario {
     private Endereco endereco;
     Scanner scanner = ScannerUtil.getScanner();
 
-    public void cadastrar(){
+    public void cadastrar() {
+        System.out.println("-_ Cadastrar Usuario _-");
+
         System.out.print("Digite seu nome: ");
         setNome(scanner.nextLine());
-        this.nome = getNome();
+
         System.out.print("Digite seu codigo de usuário: ");
-        setCodigo(scanner.nextLong());
-        this.codigo = getCodigo();
+        setCodigo(Long.parseLong(scanner.nextLine())); // Convertendo a entrada para long
+
         System.out.print("Digite seu cpf: ");
-        setCpf(scanner.nextLong());
+        setCpf(Long.parseLong(scanner.nextLine())); // Convertendo a entrada para long
 
+        // Instanciar um objeto Endereco e chamar o método local
+        endereco = new Endereco();
+        endereco.local();
     }
-
-
 
     public String getNome() {
         return nome;
@@ -52,5 +55,4 @@ public class Usuario {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
-
 }

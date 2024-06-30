@@ -7,12 +7,16 @@ public class Endereco {
 
     Scanner scanner = ScannerUtil.getScanner();
 
-
-    public void local(){
-        System.out.println("Digite Seu endereco:");
-        System.out.print("Digite o nome da rua:");
+    public void local() {
+        System.out.println("Digite seu endereco:");
+        System.out.print("Digite o nome da rua: ");
         setRua(scanner.nextLine());
 
+        System.out.print("Digite o numero da sua casa: ");
+        setNumero(Integer.parseInt(scanner.nextLine())); // Consumir a nova linha residual
+
+        System.out.print("Digite o seu Bairro: ");
+        setBairro(scanner.nextLine());
     }
 
     public String getRua() {
@@ -38,5 +42,4 @@ public class Endereco {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
-
 }
