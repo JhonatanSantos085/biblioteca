@@ -32,7 +32,9 @@ public class Main {
                     System.out.println("User: "+ user.getNome()+ " Cadastrado com sucesso!!");
                     break;
                 case 3:
-                    // Implementar a lógica de cadastro de livro aqui
+                    Livro book = new Livro();
+                    book.cadastrarLivro();
+                    System.out.println("O livro foi cadastrado com sucesso!");
                     break;
                 case 4:
                     // Implementar a lógica de mostrar todos os dados do cadastro aqui
