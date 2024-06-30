@@ -8,7 +8,7 @@ public class Endereco {
     Scanner scanner = ScannerUtil.getScanner();
 
     public void local() {
-        System.out.println("Digite seu endereco:");
+        System.out.println("-_ Digite seu Endereco _-");
         System.out.print("Digite o nome da rua: ");
         setRua(scanner.nextLine());
 

@@ -1,0 +1,12 @@
+	Problema do Consumo de linha em Java.
+
+O problema do consumo de nova linha em java ocorre frequentemente quando se usa classes como "Scanner" Para ler entradas do usuário. 
+
+O 'Scanner' usa delimitadores, como espaço em branco e novas linhas, para saparar os tokens de entrada. Isso pode levar a situações onde as novas linhas não são consumidas como esperado, causando comportamentos indesejados no programa. 
+
+Tokens:  Elementos individuais da entrada divididos por delimitadores.
+
+Delimitadores:  Caracteres ou padrões que separam os tokens. O padrão é espaço em branco, mas pode ser personalizado.
+
+Solução
+Uma maneira de resolver esse problema é adicionar uma chamada extra a nextLine() logo após ler o número para consumir a nova linha pendente.

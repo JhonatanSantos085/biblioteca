@@ -22,10 +22,14 @@ public class Main {
                     break;
                 case 1:
                     // Implementar a lógica de cadastro de funcionário aqui
+                    Funcionario func = new Funcionario();
+                    func.cadastrarFun();
+                    System.out.println("Funcionário " + func.getNome() + " Cadastrado com sucesso!");
                     break;
                 case 2:
                     Usuario user = new Usuario();
-                    user.cadastrar();
+                    user.cadastrarUser();
+                    System.out.println("User: "+ user.getNome()+ " Cadastrado com sucesso!!");
                     break;
                 case 3:
                     // Implementar a lógica de cadastro de livro aqui
