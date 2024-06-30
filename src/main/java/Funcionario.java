@@ -5,4 +5,5 @@ public class Funcionario {
     private double salario;
     private Endereco endereco;
 
+
 }

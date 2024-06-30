@@ -21,8 +21,9 @@ public class Main {
                     System.out.println("Encerrando programa!");
                     break;
                 case 1:
-                    System.out.println("-_ Cadastrar Usuario _-");
 
+                case 2:
+                    System.out.println("-_ Cadastrar Usuario _-");
                     Usuario user = new Usuario();
                     user.cadastrar();
                     break;

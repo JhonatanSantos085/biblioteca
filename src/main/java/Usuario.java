@@ -19,6 +19,7 @@ public class Usuario {
     }
 
 
+
     public String getNome() {
         return nome;
     }
@@ -50,4 +51,5 @@ public class Usuario {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+    
 }
