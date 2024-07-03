@@ -4,6 +4,7 @@ public class Main {
         Scanner scanner = ScannerUtil.getScanner();
 
         int opcao;
+        int opcao2;
         do {
             System.out.println("Escolha uma opção abaixo\n" +
                     "[1] - Cadastrar funcionário\n" +
@@ -41,6 +42,7 @@ public class Main {
                     break;
                 case 5:
                     // Implementar a lógica de locação aqui
+
                     break;
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
