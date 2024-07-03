@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = ScannerUtil.getScanner();
+        Dados dados = new Dados();
 
         int opcao;
         int opcao2;
@@ -35,10 +36,14 @@ public class Main {
                 case 3:
                     Livro book = new Livro();
                     book.cadastrarLivro();
+                    book.setStatus(true);
+                    dados.adicionarLivro(book);
                     System.out.println("O livro foi cadastrado com sucesso!");
                     break;
                 case 4:
                     // Implementar a lógica de mostrar todos os dados do cadastro aqui
+                    System.out.println("Dados cadastrados:");
+                    dados.listarLivros();
                     break;
                 case 5:
                     // Implementar a lógica de locação aqui

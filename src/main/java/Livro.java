@@ -1,10 +1,10 @@
 import java.util.Scanner;
-
 public class Livro {
     private String titulo;
     private String genero;
     private String autor;
     private boolean status;
+
 
     Scanner scanner = ScannerUtil.getScanner();
 
@@ -19,6 +19,8 @@ public class Livro {
 
         System.out.println("Digite o autor do livro");
         setAutor(scanner.nextLine());
+
+
 
 
     }
@@ -59,4 +61,9 @@ public class Livro {
     public String getTitulo(){
         return titulo;
     }
+    @Override
+    public String toString() {
+        return "Título: " + titulo + ", Gênero: " + genero + ", Autor: " + autor + ", Status: " + (status ? "Disponível" : "Indisponível");
+    }
+
 }
