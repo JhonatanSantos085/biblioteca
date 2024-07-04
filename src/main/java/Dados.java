@@ -3,13 +3,24 @@ import java.util.List;
 
 public class Dados {
     private List<Livro> livros;
+    private List<Funcionario> funcionarios;
+    private List<Usuario> usuarios;
 
     public Dados() {
         livros = new ArrayList<>();
+        funcionarios = new ArrayList<>();
+        usuarios = new ArrayList<>();
+
     }
 
     public void adicionarLivro(Livro livro) {
         livros.add(livro);
+    }
+    public void adicionarFuncionario(Funcionario funcionario){
+        funcionarios.add(funcionario);
+    }
+    public void adiconarUsuario(Usuario user){
+        usuarios.add(user);
     }
 
     public void listarLivros() {
@@ -17,4 +28,18 @@ public class Dados {
             System.out.println(livro);
         }
     }
+    public void listarFuncionarios(){
+        for (Funcionario funcionario : funcionarios){
+            System.out.println(funcionario);
+        }
+    }
+
+    public void listarUsuarios(){
+        for (Usuario user : usuarios){
+            System.out.println(user);
+        }
+    }
+
+
+
 }

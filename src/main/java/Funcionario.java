@@ -68,4 +68,9 @@ public class Funcionario {
     public void setCpf(long cpf) {
         this.cpf = cpf;
     }
+
+    @Override
+    public String toString(){
+        return "Nome: "+nome+", CPF: "+cpf+", CARGO: "+cargo+", SALARIO: R$"+salario+", Endereco: "+endereco;
+    }
 }

@@ -62,4 +62,9 @@ public class Usuario {
 
         this.endereco = endereco;
     }
+
+    @Override
+    public String toString(){
+        return "Nome: "+nome+", CODIGO: "+codigo+", CPF: "+cpf+", Endereco: "+endereco;
+    }
 }

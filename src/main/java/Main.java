@@ -6,6 +6,7 @@ public class Main {
 
         int opcao;
         int opcao2;
+        int opcao3;
         do {
             System.out.println("Escolha uma opção abaixo\n" +
                     "[1] - Cadastrar funcionário\n" +
@@ -27,11 +28,13 @@ public class Main {
                     Funcionario func = new Funcionario();
                     func.cadastrarFun();
                     System.out.println("Funcionário " + func.getNome() + " Cadastrado com sucesso!");
+                    dados.adicionarFuncionario(func);
                     break;
                 case 2:
                     Usuario user = new Usuario();
                     user.cadastrarUser();
                     System.out.println("User: "+ user.getNome()+ " Cadastrado com sucesso!!");
+                    dados.adiconarUsuario(user);
                     break;
                 case 3:
                     Livro book = new Livro();
@@ -42,8 +45,38 @@ public class Main {
                     break;
                 case 4:
                     // Implementar a lógica de mostrar todos os dados do cadastro aqui
-                    System.out.println("Dados cadastrados:");
-                    dados.listarLivros();
+                    do {
+                        System.out.println("Escolha uma opção abaixo\n" +
+                                "[1] - ExibirInfo funcionário\n" +
+                                "[2] - ExibirInfo usuário\n" +
+                                "[3] - ExibirInfo livro\n" +
+                                "[0] - Voltar ao menu principal\n");
+
+                        opcao2 = scanner.nextInt();
+                        scanner.nextLine();
+
+                        switch (opcao2){
+                            case 0:
+                                System.out.println("Voltando ao menu principal!!");
+                                break;
+
+                            case 1:
+                                System.out.println("Exibindo informacoes sobre funcionarios");
+                                dados.listarFuncionarios();
+                                break;
+                            case 2:
+                                System.out.println("Exibindo informacoes sobre usuarios cadastrados");
+                                dados.listarUsuarios();
+                                break;
+                            case 3:
+                                System.out.println("Exibindo informacoes de livros cadastrados");
+                                System.out.println("Dados cadastrados:");
+                                dados.listarLivros();
+                                break;
+
+                        }
+
+                    }while(opcao2 != 0);
                     break;
                 case 5:
                     // Implementar a lógica de locação aqui

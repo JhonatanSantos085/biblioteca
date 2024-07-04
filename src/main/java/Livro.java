@@ -5,7 +5,6 @@ public class Livro {
     private String autor;
     private boolean status;
 
-
     Scanner scanner = ScannerUtil.getScanner();
 
     public void cadastrarLivro(){
@@ -20,16 +19,7 @@ public class Livro {
         System.out.println("Digite o autor do livro");
         setAutor(scanner.nextLine());
 
-
-
-
     }
-
-
-
-
-
-
 
     public String getGenero() {
         return genero;
@@ -61,6 +51,7 @@ public class Livro {
     public String getTitulo(){
         return titulo;
     }
+
     @Override
     public String toString() {
         return "Título: " + titulo + ", Gênero: " + genero + ", Autor: " + autor + ", Status: " + (status ? "Disponível" : "Indisponível");
