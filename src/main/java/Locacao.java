@@ -10,9 +10,9 @@ public class Locacao {
 
 
 
-    //public double calcularLocacao(double valorLocacao, ){
-    //    return;
-    //}
+    public double calcularLocacao(double valorLocacao ){
+        return 0.0;
+    }
     public void locarLivro(){
 
     }

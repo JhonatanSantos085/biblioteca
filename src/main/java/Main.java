@@ -81,6 +81,33 @@ public class Main {
                 case 5:
                     // Implementar a lógica de locação aqui
 
+                    do{
+                        System.out.println("Escolha uma opção abaixo\n" +
+                                "[0] - Voltar para menu princial\n" +
+                                "[1] - Locar Livro\n" +
+                                "[2] - Devolucao\n" );
+                        opcao3 = scanner.nextInt();
+                        scanner.nextLine();
+
+                        switch (opcao3){
+                            case 0:
+                                System.out.println("Voltando ao menu princial");
+                                break;
+                            case 1:
+                                System.out.println("Locando um Livro!");
+                                System.out.print("Digite o nome do livro que deseja locar: ");
+                                String titulo = scanner.nextLine();
+                                Dados dadosLivro = new Dados();
+                                dadosLivro.verificaLivro(titulo);
+
+
+                                break;
+                            case 2:
+                                System.out.println("Devolucao de Livro");
+
+                        }
+                    }while(opcao3 != 0);
+
                     break;
                 default:
                     System.out.println("Opção inválida! Tente novamente.");

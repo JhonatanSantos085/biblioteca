@@ -13,6 +13,15 @@ public class Dados {
 
     }
 
+    public Livro verificaLivro(String titulo) {
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                return livro;
+            }
+        }
+        return null;
+    }
+
     public void adicionarLivro(Livro livro) {
         livros.add(livro);
     }
